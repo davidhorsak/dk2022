@@ -12,5 +12,8 @@
     "main": "index.js",
     "description": "",
     "version": "1.0.0",
-    "name": "wedding"
+    "name": "wedding",
+    "dependencies": {
+        "html-minifier": "^4.0.0"
+    }
 }
