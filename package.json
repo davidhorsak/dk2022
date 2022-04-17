@@ -1,8 +1,7 @@
 {
     "devDependencies": {
         "@11ty/eleventy": "^1.0.0",
-        "gulp": "^4.0.2",
-        "webpack-stream": "^7.0.0"
+        "gulp": "^4.0.2"
     },
     "license": "ISC",
     "author": "",

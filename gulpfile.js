@@ -1,29 +1,11 @@
-const gulp = require('gulp');
-const webpack = require('webpack-stream');
-
-
-var concat = require('gulp-concat'),
-    order = require('gulp-order');
+const gulp = require('gulp'),
+      concat = require('gulp-concat'),
+      order = require('gulp-order');
 
 var jsSources = ['js/*.js'],
     outputCSSDir = 'css',
     outputJSDir = 'js',
     outputDir = './public/js';
-
-gulp.task('default', function () {
-  return gulp
-    .src('src/assets/js/index.js')
-    .pipe(
-      webpack({
-          optimization: {
-            minimize: false,
-            mangleExports: false,
-            moduleIds: false
-          }
-      })
-    )
-    .pipe(gulp.dest('public/js'));
-});
 
 
 gulp.task('js', function() {
