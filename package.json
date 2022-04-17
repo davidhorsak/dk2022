@@ -7,7 +7,7 @@
     "author": "",
     "keywords": [],
     "scripts": {
-        "build": "npx @11ty/eleventy",
+        "build": "npx @11ty/eleventy & npx gulp",
         "server": "npx @11ty/eleventy --serve"
     },
     "main": "index.js",
