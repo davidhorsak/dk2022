@@ -1,0 +1,49 @@
+const gulp = require('gulp');
+const webpack = require('webpack-stream');
+
+
+var concat = require('gulp-concat'),
+    order = require('gulp-order');
+
+var jsSources = ['js/*.js'],
+    outputCSSDir = 'css',
+    outputJSDir = 'js',
+    outputDir = './public/js';
+
+gulp.task('default', function () {
+  return gulp
+    .src('src/assets/js/index.js')
+    .pipe(
+      webpack({
+          optimization: {
+            minimize: false,
+            mangleExports: false,
+            moduleIds: false
+          }
+      })
+    )
+    .pipe(gulp.dest('public/js'));
+});
+
+
+gulp.task('js', function() {
+  var files = [
+    './src/assets/js/master.js'
+	// 		'./src/assets/js/jquery.min.js',
+	// 		'./src/assets/js/jquery.easing.1.3.js',
+	// 		'./src/assets/js/bootstrap.min.js',
+	// 		'./src/assets/js/jquery.waypoints.min.js',
+	// 		'./src/assets/js/sticky.js',
+	// 		'./src/assets/js/jquery.stellar.js',
+	// 		'./src/assets/js/hoverIntent.js',
+	// 		'./src/assets/js/superfish.js',
+	// 		'./src/assets/js/jquery.magnific-popup.min.js',
+	// 		'./src/assets/js/magnific-popup-options.js',
+	// 		'./src/assets/js/main.js'
+	];
+
+	return gulp
+		.src(files)
+		.pipe(concat('file.js'))
+		.pipe(gulp.dest(outputDir));
+});
