@@ -1,7 +1,8 @@
 const gulp = require('gulp'),
       uglify = require('gulp-uglify'),
       concat = require('gulp-concat'),
-      order = require('gulp-order');
+      order = require('gulp-order'),
+      sass = require('gulp-sass')(require('sass'));
 
 function js(cb) {
   var files = [
@@ -27,5 +28,22 @@ function js(cb) {
   cb();
 }
 
+function css(cb) {
+  var files = [
+    './src/assets/sass/bootstrap.scss',
+    './src/assets/sass/style.scss',
+    './src/assets/sass/animate.css',
+    './src/assets/sass/icomoon.css',
+    './src/assets/sass/magnific-popup.css',
+    './src/assets/sass/superfish.css'
+  ];
+
+  return gulp
+    .src(files)
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(gulp.dest('./public/css'));
+}
+
 exports.js = js;
-exports.default = gulp.series(js);
+exports.css = css;
+exports.default = gulp.series(js, css);
