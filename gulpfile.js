@@ -23,7 +23,7 @@ function js(cb) {
 		.src(files)
 		.pipe(concat('scripts.js'))
   	.pipe(uglify({mangle: false}))
-		.pipe(gulp.dest('./public/js'));
+		.pipe(gulp.dest('./public/assets'));
 
   cb();
 }
@@ -40,8 +40,9 @@ function css(cb) {
 
   return gulp
     .src(files)
-    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-    .pipe(gulp.dest('./public/css'));
+    .pipe(sass({outputStyle: 'nested'}).on('error', sass.logError))
+    .pipe(concat('styles.css'))
+    .pipe(gulp.dest('./public/assets'));
 }
 
 exports.js = js;
