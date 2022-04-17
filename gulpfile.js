@@ -32,7 +32,6 @@ gulp.task('js', function() {
 	  './src/assets/js/jquery.easing.1.3.js',
 	  './src/assets/js/bootstrap-3.3.5.js',
     './src/assets/js/master.js'
-	// 		'./src/assets/js/bootstrap.min.js',
 	// 		'./src/assets/js/jquery.waypoints.min.js',
 	// 		'./src/assets/js/sticky.js',
 	// 		'./src/assets/js/jquery.stellar.js',
