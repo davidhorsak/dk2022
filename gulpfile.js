@@ -37,6 +37,7 @@ gulp.task('js', function() {
 	  './src/assets/js/hoverIntent-r7.js',
 		'./src/assets/js/superfish.js',
 	  		'./src/assets/js/jquery.magnific-popup-0.9.9.js',
+	  './src/assets/js/main.js',
     './src/assets/js/master.js'
 
 	// 		'./src/assets/js/jquery.magnific-popup.min.js',
