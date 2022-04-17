@@ -1,4 +1,5 @@
 const gulp = require('gulp'),
+      uglify = require('gulp-uglify'),
       concat = require('gulp-concat'),
       order = require('gulp-order');
 
@@ -26,5 +27,6 @@ gulp.task('js', function() {
 	return gulp
 		.src(files)
 		.pipe(concat('file.js'))
+  	.pipe(uglify({mangle: false}))
 		.pipe(gulp.dest(outputDir));
 });
