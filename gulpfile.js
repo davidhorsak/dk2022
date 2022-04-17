@@ -30,12 +30,12 @@ function js(cb) {
 
 function css(cb) {
   var files = [
-    './src/assets/sass/bootstrap.scss',
-    './src/assets/sass/style.scss',
     './src/assets/sass/animate.css',
     './src/assets/sass/icomoon.css',
+    './src/assets/sass/bootstrap.scss',
+    './src/assets/sass/superfish.css',
     './src/assets/sass/magnific-popup.css',
-    './src/assets/sass/superfish.css'
+    './src/assets/sass/style.scss'
   ];
 
   return gulp
