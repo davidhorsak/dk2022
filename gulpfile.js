@@ -35,8 +35,10 @@ gulp.task('js', function() {
 	  './src/assets/js/sticky-4.0.1.js',
 	  './src/assets/js/jquery.stellar-0.6.2.js',
 	  './src/assets/js/hoverIntent-r7.js',
+		'./src/assets/js/superfish.js',
+
     './src/assets/js/master.js'
-	// 		'./src/assets/js/superfish.js',
+
 	// 		'./src/assets/js/jquery.magnific-popup.min.js',
 	// 		'./src/assets/js/magnific-popup-options.js',
 	// 		'./src/assets/js/main.js'
