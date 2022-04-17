@@ -3,13 +3,7 @@ const gulp = require('gulp'),
       concat = require('gulp-concat'),
       order = require('gulp-order');
 
-var jsSources = ['js/*.js'],
-    outputCSSDir = 'css',
-    outputJSDir = 'js',
-    outputDir = './public/js';
-
-
-gulp.task('js', function() {
+function js(cb) {
   var files = [
 	  './src/assets/js/jquery-2.1.4.js',
 	  './src/assets/js/jquery.easing.1.3.js',
@@ -26,7 +20,12 @@ gulp.task('js', function() {
 
 	return gulp
 		.src(files)
-		.pipe(concat('file.js'))
+		.pipe(concat('scripts.js'))
   	.pipe(uglify({mangle: false}))
-		.pipe(gulp.dest(outputDir));
-});
+		.pipe(gulp.dest('./public/js'));
+
+  cb();
+}
+
+exports.js = js;
+exports.default = gulp.series(js);
