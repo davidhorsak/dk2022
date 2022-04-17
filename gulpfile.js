@@ -40,7 +40,7 @@ function css(cb) {
 
   return gulp
     .src(files)
-    .pipe(sass({outputStyle: 'nested'}).on('error', sass.logError))
+    .pipe(sass().on('error', sass.logError))
     .pipe(concat('styles.css'))
     .pipe(gulp.dest('./public/assets'));
 }
