@@ -36,14 +36,9 @@ gulp.task('js', function() {
 	  './src/assets/js/jquery.stellar-0.6.2.js',
 	  './src/assets/js/hoverIntent-r7.js',
 		'./src/assets/js/superfish.js',
-	  		'./src/assets/js/jquery.magnific-popup-0.9.9.js',
+	  './src/assets/js/jquery.magnific-popup-0.9.9.js',
 	  './src/assets/js/main.js',
-    './src/assets/js/modernizr-2.6.2.js',
-    './src/assets/js/master.js'
-
-	// 		'./src/assets/js/jquery.magnific-popup.min.js',
-	// 		'./src/assets/js/magnific-popup-options.js',
-	// 		'./src/assets/js/main.js'
+    './src/assets/js/modernizr-2.6.2.js'
 	];
 
 	return gulp
