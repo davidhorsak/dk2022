@@ -14932,7 +14932,7 @@ img.mfp-img {
 }
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *	Edit this section
 *
 * ======================================================= */
@@ -15548,6 +15548,41 @@ figure {
   font-size: 30px;
 }
 .wedding-events .desc p strong {
+  font-size: 14px;
+}
+
+.wedding-gifts {
+  background: #fff;
+  margin-bottom: 15px;
+}
+.wedding-gifts .square-wrap {
+  padding: 10px;
+}
+.wedding-gifts .square {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+.wedding-gifts .square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.wedding-gifts .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.wedding-gifts .desc {
+  padding: 2em;
+}
+.wedding-gifts .desc h3 {
+  font-size: 30px;
+}
+.wedding-gifts .desc p strong {
   font-size: 14px;
 }
 
