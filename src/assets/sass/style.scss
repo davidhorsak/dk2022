@@ -1,12 +1,12 @@
 $font-primary: 'Open Sans', Arial, sans-serif;
 $font-secondary: 'Montez', cursive;
 // Overrides
-$grid-gutter-width: 40px; 
+$grid-gutter-width: 40px;
 $border-radius-base:  4px;
 $padding-base-vertical: 14px;
 
 $brand-primary: #F69D9D;
- 
+
 
 $brand-white: #fff;
 $brand-black: #000;
@@ -60,16 +60,16 @@ $form-group-margin-bottom: 30px;
           border-radius: $radius;
 }
 @mixin flex() {
-	display: -webkit-box;      
-  	display: -moz-box;         
-  	display: -ms-flexbox;      
-  	display: -webkit-flex;     
-  	display: flex;             
+	display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
 }
 @mixin flexwrap() {
 	flex-wrap: wrap;
-	-webkit-flex-wrap: wrap; 
-	-moz-flex-wrap: wrap; 
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
 }
 
 @font-face {
@@ -84,7 +84,7 @@ $form-group-margin-bottom: 30px;
 }
 
 @mixin icomoon() {
-	
+
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -96,10 +96,10 @@ $form-group-margin-bottom: 30px;
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	
+
 }
 
-// Import 
+// Import
 @import 'bootstrap/mixins';
 @import 'bootstrap/variables';
 
@@ -108,7 +108,7 @@ $form-group-margin-bottom: 30px;
 
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *	Edit this section
 *
 * ======================================================= */
@@ -208,7 +208,7 @@ figure {
 			margin-right: 15px;
 			position: relative;
 			@include transition(.5s, ease-in-out);
-			
+
 			&:last-child {
 				margin-right: 0;
 			}
@@ -309,8 +309,8 @@ figure {
 .sf-menu ul {
 	box-shadow: none;
 	border: transparent;
-	min-width: 12em; 
-	*width: 12em; 
+	min-width: 12em;
+	*width: 12em;
 }
 
 .sf-menu a {
@@ -318,10 +318,10 @@ figure {
 	padding: .75em 1em!important;
 	font-weight: normal;
 	border-left: none;
-	border-top: none; 
+	border-top: none;
 	border-top: none;
 	text-decoration: none;
-	zoom: 1; 
+	zoom: 1;
 	font-size: 16px;
 	border-bottom: none!important;
 
@@ -333,7 +333,7 @@ figure {
 	a{
 		&:hover,&:focus{
 			color: $brand-primary;
-		} 
+		}
 	}
 }
 
@@ -347,7 +347,7 @@ figure {
 .sf-menu ul li a,
 .sf-menu ul ul li a {
 	text-transform: none;
-	padding: .20em 1em!important;	
+	padding: .20em 1em!important;
 	letter-spacing: 1px;
 	font-size: 14px!important;
 }
@@ -381,13 +381,13 @@ figure {
 	height: 0;
 	width: 0;
 	border: 5px solid transparent;
-	border-top-color: #ccc; 
+	border-top-color: #ccc;
 }
 
 .sf-arrows > li > .sf-with-ul:focus:after,
 .sf-arrows > li:hover > .sf-with-ul:after,
 .sf-arrows > .sfHover > .sf-with-ul:after {
-	border-top-color: #ccc; 
+	border-top-color: #ccc;
 }
 .sf-arrows ul .sf-with-ul:after {
 	margin-top: -5px;
@@ -410,7 +410,7 @@ figure {
 	background: $brand-white;
 }
 .nav-header{
-	
+
 	position: relative;
 	float: left;
 	width: 100%;
@@ -439,7 +439,7 @@ figure {
 			color: $brand-primary !important;
 		}
 	}
-	
+
 }
 
 #fh5co-menu-wrap {
@@ -493,7 +493,7 @@ figure {
 				}
 			}
 		}
-	}	
+	}
 }
 #fh5co-primary-menu .fh5co-sub-menu {
 	padding:10px 7px 10px;
@@ -511,9 +511,9 @@ figure {
 	> li {
 		> .fh5co-sub-menu {
 			left: 100%;
-		}	
+		}
 	}
-	
+
 }
 
 #fh5co-primary-menu .fh5co-sub-menu:before {
@@ -557,7 +557,7 @@ figure {
 	-o-box-shadow:0 5px 15px 4px rgba(0,0,0,0.09);
 	box-shadow:0 5px 15px 4px rgba(0,0,0,0.09);
 	&:before {
-		display:none;	
+		display:none;
 	}
 }
 #fh5co-primary-menu .fh5co-sub-menu a {
@@ -698,6 +698,42 @@ figure {
 	}
 }
 
+// Gifts
+.wedding-gifts{
+	background: $brand-white;
+  margin-bottom: 15px;
+  .square-wrap {
+    padding: 10px;
+  }
+  .square {
+    position: relative;
+    width: 100%;
+  }
+  .square:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+  .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+  }
+	.desc{
+		padding: 2em;
+		h3{
+			font-size: 30px;
+		}
+		p{
+			strong{
+				font-size: 14px;
+			}
+		}
+	}
+}
 
 #fh5co-started {
 	position: relative;
@@ -726,15 +762,15 @@ figure {
 		}
 
 		&:-moz-placeholder { /* Firefox 18- */
-		   color: $brand-white;  
+		   color: $brand-white;
 		}
 
 		&::-moz-placeholder {  /* Firefox 19+ */
-		   color: $brand-white;  
+		   color: $brand-white;
 		}
 
-		&:-ms-input-placeholder {  
-		   color: $brand-white;  
+		&:-ms-input-placeholder {
+		   color: $brand-white;
 		}
 		@include transition(.5s);
 		&:focus {
@@ -824,7 +860,7 @@ figure {
 	margin-bottom: 60px;
 	a{
 		img{
-	
+
 			width: 100%;
 
 			&:hover{
@@ -836,7 +872,7 @@ figure {
 	@media screen and (max-width: $screen-sm) {
 		width: 100%;
 	}
-	
+
 
 	.blog-text {
 		margin-bottom: 30px;
@@ -1037,7 +1073,7 @@ figure {
 
 // Burger Menu
 .fh5co-nav-toggle {
- 
+
   cursor: pointer;
   text-decoration: none;
   &.active i {
@@ -1136,7 +1172,7 @@ figure {
   		top: 0px;
   		margin-top: 2em;
   	}
-  
+
 }
 
 
@@ -1166,25 +1202,25 @@ figure {
 	padding-bottom: 4em;
 	@media screen and (max-width: $screen-sm ) {
 		padding-bottom: 2em;
-	}	
+	}
 }
 .row-top-padded-md {
 	padding-top: 4em;
 	@media screen and (max-width: $screen-sm ) {
 		padding-top: 2em;
-	}	
+	}
 }
 .row-bottom-padded-sm {
 	padding-bottom: 2em;
 	@media screen and (max-width: $screen-sm ) {
 		padding-bottom: 2em;
-	}	
+	}
 }
 .row-top-padded-sm {
 	padding-top: 2em;
 	@media screen and (max-width: $screen-sm ) {
 		padding-top: 2em;
-	}	
+	}
 }
 
 .nopadding{
@@ -1204,11 +1240,11 @@ figure {
 	line-height: 1.8;
 }
 
-.no-js #loader { 
-	display: none;  
+.no-js #loader {
+	display: none;
 }
-.js #loader { 
-	display: block; position: absolute; left: 100px; top: 0; 
+.js #loader {
+	display: block; position: absolute; left: 100px; top: 0;
 }
 .fh5co-loader {
 	position: fixed;
@@ -1219,5 +1255,3 @@ figure {
 	z-index: 9999;
 	background: url(../images/hourglass.svg) center no-repeat #222222;
 }
-
-

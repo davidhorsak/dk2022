@@ -17,15 +17,15 @@ top_h2: Gifts
 			</div>
 		</div>
 
-
-
 		<div class="row row-bottom-padded-md">
       {%- for gift in collections.gifts -%}
-
-
 			  <div class="col-md-3 text-center animate-box">
-				  <div class="wedding-events">
-					  <div class="ceremony-bg" style="background-image: url(/images/wed-party.jpg);"></div>
+				  <div class="wedding-gifts">
+            <div class="square-wrap">
+              <div class="square">
+                <div class="content" style="background-image: url(/images/gifts/{{ gift.data.image_name }});"></div>
+              </div>
+            </div>
 					  <div class="desc">
 						  <h4>{{ gift.data.title }}</h4>
 						  <p>{{ gift.data.text }}</p>
