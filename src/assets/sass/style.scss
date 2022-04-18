@@ -708,6 +708,7 @@ figure {
   .square {
     position: relative;
     width: 100%;
+    display: block;
   }
   .square:after {
     content: "";
