@@ -9,19 +9,17 @@ top_h2: FAQ
 {% include 'top.njk' %}
 {% include 'navi.njk' %}
 
-<div id="fh5co-the-event" class="fh5co-section-gray">
+<div class="fh5co-section-gray fh5co-content-section">
 	<div class="container">
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-				<h2>{{ top_h2 }}</h2>
-			</div>
-		</div>
+		{% include 'heading-section.njk' %}
+
 		{%- for question in collections.faqs -%}
 			<div class="row animate-box">
 			  <div class="col-md-12">
 				  <h3>{{ question.data.title }}</h4>
 					<p>{{ question.data.text }}</p>
 			  </div>
-		</div>
-	{%- endfor -%}
+			</div>
+		{%- endfor -%}
+	</div>
 </div>
