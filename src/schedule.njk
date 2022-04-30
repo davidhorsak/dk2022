@@ -14,6 +14,19 @@ top_h2: Schedule
 		{% include 'heading-section.njk' %}
 
 		<div class="row row-bottom-padded-md">
+      {%- for event in collections.events -%}
+			  <div class="col-md-6 text-center animate-box">
+				  <div class="wedding-events">
+					  <div class="ceremony-bg" style="background-image: url(/images/wed-ceremony.jpg);"></div>
+					  <div class="desc">
+						  <h3>{{ event.data.title }}</h3>
+						  <p><strong>{{ event.data.datetime }} @ {{ event.data.location }}</strong></p>
+						  <p>{{ event.data.opening }}</p>
+					  </div>
+				  </div>
+			  </div>
+      {%-  endfor -%}
+
 			<div class="col-md-6 text-center animate-box">
 				<div class="wedding-events">
 					<div class="ceremony-bg" style="background-image: url(/images/wed-ceremony.jpg);"></div>
@@ -24,6 +37,7 @@ top_h2: Schedule
 					</div>
 				</div>
 			</div>
+
 			<div class="col-md-6 text-center animate-box">
 				<div class="wedding-events">
 					<div class="ceremony-bg" style="background-image: url(/images/wed-party.jpg);"></div>
