@@ -20,14 +20,14 @@
 					<li class="{{ schedule_class }}">
 						<a href="/schedule">Schedule</a>
 						<ul class="fh5co-sub-menu">
-							<li><a href="https://freehtml5.co/wedding-free-html5-bootstrap-template-for-wedding-websites/">Wedding Template</a></li>
-							<li><a href="https://freehtml5.co/marble-free-html5-bootstrap-template-for-portfolio-or-multi-purpose-websites/">Marble Template</a></li>
-							<li><a href="https://freehtml5.co/tasty-free-bootstrap-html5-template-for-restaurant-websites/">Tasty Template</a></li>
+              {%- for event in collections.events -%}
+							  <li><a href="{{ event.url }}">{{ event.data.title }}</a></li>
+              {%-  endfor -%}
 						</ul>
 					</li>
-					<li class="{{ wedding_party_class }}"><a href="/wedding-party">Wedding Party</a></li>
-					<li class="{{ registry_class }}"><a href="/registry">Registry</a></li>
-					<li class="{{ faq_class }}"><a href="/faq">FAQ</a></li>
+					<li class="{{ wedding_party_class }}"><a href="/wedding-party/">Wedding Party</a></li>
+					<li class="{{ registry_class }}"><a href="/registry/">Registry</a></li>
+					<li class="{{ faq_class }}"><a href="/faq/">FAQ</a></li>
 				</ul>
 			</nav>
 		</div>
