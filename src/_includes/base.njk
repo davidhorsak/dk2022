@@ -23,9 +23,17 @@
 <body>
   <div id="fh5co-wrapper">
 	  <div id="fh5co-page">
+      {% include 'top.njk' %}
+      {% include 'navi.njk' %}
+      <div class="fh5co-section-gray fh5co-content-section">
+	      <div class="container">
+          {% if not disable_headsection == true %}
+		        {% include 'heading-section.njk' %}
+          {% endif %}
 
-      {{ content | safe }}
-
+          {{ content | safe }}
+	      </div>
+      </div>
 		  <footer>
 			  <div id="footer">
 				  <div class="container">

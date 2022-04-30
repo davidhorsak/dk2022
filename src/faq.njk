@@ -6,20 +6,11 @@ top_h1: David & Katharina
 top_h2: FAQ
 ---
 
-{% include 'top.njk' %}
-{% include 'navi.njk' %}
-
-<div class="fh5co-section-gray fh5co-content-section">
-	<div class="container">
-		{% include 'heading-section.njk' %}
-
-		{%- for question in collections.faqs -%}
-			<div class="row animate-box">
-			  <div class="col-md-12">
-				  <h3>{{ question.data.title }}</h4>
-					<p>{{ question.data.text }}</p>
-			  </div>
-			</div>
-		{%- endfor -%}
+{%- for question in collections.faqs -%}
+	<div class="row animate-box">
+		<div class="col-md-12">
+			<h3>{{ question.data.title }}</h4>
+				<p>{{ question.data.text }}</p>
+		</div>
 	</div>
-</div>
+{%- endfor -%}
