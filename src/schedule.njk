@@ -6,18 +6,22 @@ top_h1: David & Katharina
 top_h2: Schedule
 ---
 
-<div class="row row-bottom-padded-md">
-  {%- for event in collections.events -%}
-		<div class="col-md-6 text-center animate-box">
-			<div class="wedding-events">
-				<div class="ceremony-bg" style="background-image: url(/images/wed-ceremony.jpg);"></div>
-				<div class="desc">
-					<h3>{{ event.data.title }}</h3>
-					<p><strong>{{ event.data.datetime }} @ {{ event.data.location }}</strong></p>
-					<p>{{ event.data.opening }}</p>
-          <a href="{{ event.url }}">More information</a>
-				</div>
-			</div>
-		</div>
-  {%-  endfor -%}
+<div class="fh5co-section-gray">
+	<div class="container">
+    <div class="row row-bottom-padded-md">
+      {%- for event in collections.events -%}
+		    <div class="col-md-6 text-center animate-box">
+			    <div class="wedding-events">
+				    <div class="ceremony-bg" style="background-image: url(/images/wed-ceremony.jpg);"></div>
+				    <div class="desc">
+					    <h3>{{ event.data.title }}</h3>
+					    <p><strong>{{ event.data.datetime }} @ {{ event.data.location }}</strong></p>
+					    <p>{{ event.data.opening }}</p>
+              <a href="{{ event.url }}">More information</a>
+				    </div>
+			    </div>
+		    </div>
+      {%-  endfor -%}
+    </div>
+  </div>
 </div>
