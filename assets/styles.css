@@ -15083,12 +15083,14 @@ figure {
 }
 
 .fh5co-cover {
-  background-size: cover;
   position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover {
-    heifght: inherit;
+    height: inherit;
     padding: 3em 0;
   }
 }
