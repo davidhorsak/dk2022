@@ -11,7 +11,7 @@
 						<a href="/schedule">Schedule</a>
 						<ul class="fh5co-sub-menu">
               {%- for event in collections.events -%}
-							  <li><a href="{{ event.url }}">{{ event.data.title }}</a></li>
+							  <li><a href="{{ event.url }}">{{ event.data.top_h2 }}</a></li>
               {%-  endfor -%}
 						</ul>
 					</li>

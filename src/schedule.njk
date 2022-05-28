@@ -2,6 +2,7 @@
 title: David & Katharina 2022 | Schedule
 schedule_class: active
 layout: "base.njk"
+image_path: /assets/images/main.jpeg
 top_h1: David & Katharina
 top_h2: Schedule
 ---
@@ -14,10 +15,10 @@ top_h2: Schedule
 			    <div class="wedding-events">
 				    <div class="ceremony-bg" style="background-image: url({{ event.data.image_path }});"></div>
 				    <div class="desc">
-					    <h3>{{ event.data.title }}</h3>
+					    <h3>{{ event.data.top_h2 }}</h3>
 					    <p><strong>{{ event.data.datetime }} @ {{ event.data.location }}</strong></p>
 					    <p>{{ event.data.opening }}</p>
-              <a href="{{ event.url }}">More information</a>
+              <a href="{{ event.url }}">{{ event.data.link_text }}</a>
 				    </div>
 			    </div>
 		    </div>
