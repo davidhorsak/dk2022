@@ -15629,6 +15629,7 @@ figure {
 }
 #fh5co-started .btn-block {
   height: 54px;
+  line-height: 35px;
   border: none !important;
   background: #F69D9D;
   color: #fff;
