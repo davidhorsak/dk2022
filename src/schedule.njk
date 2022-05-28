@@ -12,7 +12,7 @@ top_h2: Schedule
       {%- for event in collections.events -%}
 		    <div class="col-md-6 text-center animate-box">
 			    <div class="wedding-events">
-				    <div class="ceremony-bg" style="background-image: url(/images/wed-ceremony.jpg);"></div>
+				    <div class="ceremony-bg" style="background-image: url({{ event.data.image_path }});"></div>
 				    <div class="desc">
 					    <h3>{{ event.data.title }}</h3>
 					    <p><strong>{{ event.data.datetime }} @ {{ event.data.location }}</strong></p>

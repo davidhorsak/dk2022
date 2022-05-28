@@ -3,6 +3,7 @@ const htmlmin = require("html-minifier");
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/images/**/*");
   eleventyConfig.addPassthroughCopy("./src/fonts/**/*");
+  eleventyConfig.addPassthroughCopy("./src/assets/images/**/*");
 
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if(outputPath.endsWith(".html")) {
