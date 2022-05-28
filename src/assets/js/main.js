@@ -79,14 +79,6 @@ $(document).ready(function() {
 
 	};
 
-	// Parallax
-	var parallax = function() {
-		if ( !isiPad() || !isiPhone() ) {
-			$(window).stellar();
-		}
-	};
-
-
 	// Offcanvas and cloning of the main menu
 	var offcanvas = function() {
 
@@ -224,7 +216,6 @@ $(document).ready(function() {
 
 	$(function(){
 		mainMenu();
-		parallax();
 		offcanvas();
 		mobileMenuOutsideClick();
 		contentWayPoint();
