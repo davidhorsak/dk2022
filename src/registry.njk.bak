@@ -1,0 +1,29 @@
+---
+title: David & Katharina 2022 | Registry
+registry_class: active
+layout: "base.njk"
+top_h1: David & Katharina
+top_h2: Registry
+---
+
+<div class="fh5co-section-gray">
+	<div class="container">
+		<div class="row row-bottom-padded-md">
+      {%- for gift in collections.gifts -%}
+			  <div class="col-md-3 text-center animate-box">
+				  <div class="wedding-gifts">
+            <div class="square-wrap">
+              <a class="square" href="{{ gift.data.shop_url }}" target="_blank">
+                <div class="content" style="background-image: url(/images/gifts/{{ gift.data.image_name }});"></div>
+              </a>
+            </div>
+					  <div class="desc">
+						  <h4>{{ gift.data.title }}</h4>
+						  <p>{{ gift.data.text }}</p>
+					  </div>
+				  </div>
+			  </div>
+      {%- endfor -%}
+		</div>
+	</div>
+</div>
