@@ -8,7 +8,7 @@
     "keywords": [],
     "scripts": {
         "build": "npx @11ty/eleventy & npx gulp",
-        "server": "npx @11ty/eleventy --serve"
+        "server": "npx @11ty/eleventy --serve & npx gulp watch"
     },
     "main": "index.js",
     "description": "",
