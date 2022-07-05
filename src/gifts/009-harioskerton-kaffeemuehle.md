@@ -1,7 +1,7 @@
 ---
 tags:
     - gifts
-    - gifts_home
+    - gifts_ced
 title: Hario Skerton PLUS Kaffeemühle
 text: Nice text
 shop_url: https://www.coffeecircle.com/de/p/hario-skerton-hand-kaffeemuehle?number=Z005-005-007

@@ -11,7 +11,30 @@ top_h2: Registry
 
     <div class="row row-bottom-padded-md">
 			<div class="col-md-12 text-center animate-box">
-        <h3>Home and Cooking</h3>
+        <h3>Cook, Eat, Drink</h3>
+      </div>
+    </div>
+		<div class="row row-bottom-padded-md">
+      {%- for gift in collections.gifts_ced -%}
+			  <div class="col-md-3 text-center animate-box">
+				  <div class="wedding-gifts">
+            <div class="square-wrap">
+              <a class="square" href="{{ gift.data.shop_url }}" target="_blank">
+                <div class="content" style="background-image: url(/images/gifts/{{ gift.data.image_name }});"></div>
+              </a>
+            </div>
+					  <div class="desc">
+						  <h4>{{ gift.data.title }}</h4>
+						  <p>{{ gift.data.text }}</p>
+					  </div>
+				  </div>
+			  </div>
+      {%- endfor -%}
+		</div>
+
+    <div class="row row-bottom-padded-md">
+			<div class="col-md-12 text-center animate-box">
+        <h3>Home</h3>
       </div>
     </div>
 		<div class="row row-bottom-padded-md">
@@ -32,7 +55,28 @@ top_h2: Registry
       {%- endfor -%}
 		</div>
 
-
+    <div class="row row-bottom-padded-md">
+			<div class="col-md-12 text-center animate-box">
+        <h3>Bikepacking</h3>
+      </div>
+    </div>
+		<div class="row row-bottom-padded-md">
+      {%- for gift in collections.gifts_bikepacking -%}
+			  <div class="col-md-3 text-center animate-box">
+				  <div class="wedding-gifts">
+            <div class="square-wrap">
+              <a class="square" href="{{ gift.data.shop_url }}" target="_blank">
+                <div class="content" style="background-image: url(/images/gifts/{{ gift.data.image_name }});"></div>
+              </a>
+            </div>
+					  <div class="desc">
+						  <h4>{{ gift.data.title }}</h4>
+						  <p>{{ gift.data.text }}</p>
+					  </div>
+				  </div>
+			  </div>
+      {%- endfor -%}
+		</div>
 
     <div class="row row-bottom-padded-md">
 			<div class="col-md-12 text-center animate-box">
