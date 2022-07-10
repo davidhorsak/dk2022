@@ -123,31 +123,32 @@ top_h2: Registry
 		</div>
 
 
-    <!-- 
-         <div class="row row-bottom-padded-md">
-			   <div class="col-md-12 text-center animate-box">
-         <h3>Sport</h3>
-         </div>
-         </div>
-		     <div class="row row-bottom-padded-md">
-         {%- for gift in collections.gifts_sport -%}
-			   <div class="col-md-3 text-center animate-box">
-				 <div class="wedding-gifts">
-         <div class="square-wrap">
-         <a class="square" href="{{ gift.data.shop_url }}" target="_blank">
-         <div class="content" style="background-image: url(/images/gifts/{{ gift.data.image_name }});"></div>
-         </a>
-         </div>
-				 <div class="desc">
-				 <h4>{{ gift.data.title }}</h4>
-				 <p>{{ gift.data.text }}</p>
-				 </div>
-				 </div>
-			   </div>
-         {%- endfor -%}
-		     </div>
+    <div class="row row-bottom-padded-md">
+			<div class="col-md-12 text-center animate-box">
+        <h3>For our Small Family Member</h3>
+        <p>
+          Since 2 years little Eve was a inseparable member of our family and a loyal companion (if you know her, you know what we are talking about)
+        </p>
+      </div>
+    </div>
+		<div class="row row-bottom-padded-md">
+      {%- for gift in collections.gifts_pet -%}
+			  <div class="col-md-3 text-center animate-box">
+				  <div class="wedding-gifts">
+            <div class="square-wrap">
+              <a class="square" href="{{ gift.data.shop_url }}" target="_blank">
+                <div class="content" style="background-image: url(/images/gifts/{{ gift.data.image_name }});"></div>
+              </a>
+            </div>
+					  <div class="desc">
+						  <h4>{{ gift.data.title }}</h4>
+              <a href="{{ gift.data.shop_url }}">Shop</a>
+					  </div>
+				  </div>
+			  </div>
+      {%- endfor -%}
+		</div>
 
-    -->
     <div class="row row-bottom-padded-md">
 			<div class="col-md-12 text-center animate-box">
         <h3>Additional Ideas</h3>
